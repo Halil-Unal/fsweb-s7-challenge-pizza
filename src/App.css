@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+.Top h1 {
+text-align: center;
+}
+.Top button{
+  border-radius: 20px;
+  padding: 15px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+   
+  background-color: yellow;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url("mvp-banner.png");
+  background-size: cover;
+}
