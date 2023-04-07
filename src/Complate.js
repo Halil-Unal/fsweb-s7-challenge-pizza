@@ -4,8 +4,8 @@ import "./Siparis.css";
 import axios from 'axios';
 
 const Final = () => {
-    const [data, setData] = useState(null);
-  
+    const [, setData] = useState(null);
+
     function makePostRequest() {
         axios
           .post('https://reqres.in/api/orders')
@@ -24,6 +24,7 @@ const Final = () => {
         <div className="EndTop">
             <div>
         <button onClick={makePostRequest}>POST Request Yap</button>
+        
       
       </div>
             <div className="enduse">
