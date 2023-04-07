@@ -1,17 +1,17 @@
 import React from "react";
-import "./App.css";
+import { Link, Route, BrowserRouter as Router } from "react-router-dom";
+import Siparis from "./Siparis.js"
+import Anasayfa from "./Anasayfa.js"
+
 const App = () => {
   return (
-    <div className="Top">
-    <>
-    
-      <h1>Teknolojik Yemekler  </h1>
-      <h1>Kod Acıktırır </h1>
-      <h1>Pizza, Doyurur</h1>
-      <button> ACIKTIM </button>
-      
-    </>
-    </div>
+    <Router>
+      <div>
+        <Route exact path="/" component={Anasayfa} />
+        <Route exact path="/pizza" component={Siparis} />
+      </div>
+    </Router>
   );
 };
+
 export default App;
