@@ -25,6 +25,10 @@ font-size: larger;
     gap: 60px;
    
 }
+.firstfive label{
+   display: inline-block;
+   
+}
 .final{
     display: flex;
     justify-content: center;
@@ -43,14 +47,18 @@ font-size: larger;
 }
 .disbut button{
 
-
+    
 }
 .disbut p{
-    color:white
+    color:white;
+    
+}
+.disbut a{
+    text-decoration:none
 }
 .EndTop{
    
 }
-.enduse h1{
+.enduse a{
     text-decoration: none;
 }

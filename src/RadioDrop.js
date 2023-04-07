@@ -26,24 +26,18 @@ const RadioDrop = () => {
 
 </form>
 
-<UncontrolledDropdown>
-  <p> Hamur Seç *</p>
-  <DropdownToggle
-    caret
-    color="white"
-  >
-  Hamur Kalınlığı
-  </DropdownToggle>
-  <DropdownMenu >
-    <DropdownItem >
-      Kalın Hamur
-    </DropdownItem>
-    <DropdownItem>
-      İnce Hamur
-    </DropdownItem>
+<form action="/action_page.php">
+  <label for="cars">Hamur Seçiniz *</label>
+  <br></br>
+  <select name="cars" id="cars">
+    <option value="Kalın">Kalın Hamur</option>
+    <option value="İnce">İnce Hamur</option>
+    <option value="Çok İnce">Çok İnce Hamur</option>
     
-  </DropdownMenu>
-</UncontrolledDropdown>
+  </select>
+  
+  
+</form>
 </div>
 
 
