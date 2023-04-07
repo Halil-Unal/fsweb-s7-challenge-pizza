@@ -1,6 +1,6 @@
 import "./Radio.css";
 import React from "react";
-import { DropdownToggle,DropdownMenu,DropdownItem,UncontrolledDropdown,Button} from 'reactstrap';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 const RadioDrop = () => {
     return (

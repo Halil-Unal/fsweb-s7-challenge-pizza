@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import { useState ,useEffect} from "react";
 import { Card,Button,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, Route, BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 const formSchema = Yup.object().shape({
   isimDegeri: Yup.string()
     .required("İsim alanı zorunludur")
@@ -75,45 +75,45 @@ const Check = () => {
   <input onChange={handleChange} type="checkbox" id="food2" name="Malzeme" value="Sosis"  checked={formData.Malzeme.includes("Sosis")}></input>
   <label htmlFor ="food2"> Sosis</label>
   <br></br>
-  <input onChange={handleChange} type="checkbox" id="vehicle3" name="Malzeme" value="Kanada jambonu" checked={formData.Malzeme.includes("Kanada jambonu")}></input>
-  <label htmlFor ="vehicle3"> Kanada jambonu</label>
+  <input onChange={handleChange} type="checkbox" id="food3" name="Malzeme" value="Kanada jambonu" checked={formData.Malzeme.includes("Kanada jambonu")}></input>
+  <label htmlFor ="food3"> Kanada jambonu</label>
   <br></br>
-  <input onChange={handleChange} type="checkbox" id="vehicle3" name="Malzeme" value="Tavuk Izgara" checked={formData.Malzeme.includes("Tavuk Izgara")}></input>
-  <label htmlFor ="vehicle3"> Tavuk Izgara</label>
+  <input onChange={handleChange} type="checkbox" id="food4" name="Malzeme" value="Tavuk Izgara" checked={formData.Malzeme.includes("Tavuk Izgara")}></input>
+  <label htmlFor ="food4"> Tavuk Izgara</label>
   <br></br>
-  <input onChange={handleChange} type="checkbox" id="vehicle3" name="Malzeme" value="Soğan" checked={formData.Malzeme.includes("Soğan")}></input>
-  <label htmlFor ="vehicle3"> Soğan</label>
+  <input onChange={handleChange} type="checkbox" id="food5" name="Malzeme" value="Soğan" checked={formData.Malzeme.includes("Soğan")}></input>
+  <label htmlFor ="food5"> Soğan</label>
   <br></br>
   </div>
   <div className="secondfive">
-  <input onChange={handleChange} type="checkbox" id="vehicle3" name="Malzeme" value="Domates" checked={formData.Malzeme.includes("Domates")}></input>
-  <label htmlFor ="vehicle3"> Domates</label>
+  <input onChange={handleChange} type="checkbox" id="food6" name="Malzeme" value="Domates" checked={formData.Malzeme.includes("Domates")}></input>
+  <label htmlFor ="food6"> Domates</label>
   <br></br>
-  <input onChange={handleChange} type="checkbox" id="vehicle3" name="Malzeme" value="Mısır" checked={formData.Malzeme.includes("Mısır")}></input>
-  <label htmlFor ="vehicle3"> Mısır</label>
+  <input onChange={handleChange} type="checkbox" id="vfood7" name="Malzeme" value="Mısır" checked={formData.Malzeme.includes("Mısır")}></input>
+  <label htmlFor ="food7"> Mısır</label>
   <br></br>
-  <input onChange={handleChange} type="checkbox" id="vehicle3" name="Malzeme" value="Salam" checked={formData.Malzeme.includes("Salam")}></input>
-  <label htmlFor ="vehicle3"> Salam</label>
+  <input onChange={handleChange} type="checkbox" id="food8" name="Malzeme" value="Salam" checked={formData.Malzeme.includes("Salam")}></input>
+  <label htmlFor ="food8"> Salam</label>
   <br></br>
-  <input onChange={handleChange} type="checkbox" id="vehicle3" name="Malzeme" value="Jalepeno" checked={formData.Malzeme.includes("Jalepeno")}></input>
-  <label htmlFor ="vehicle3"> Jalepeno</label>
+  <input onChange={handleChange} type="checkbox" id="food9" name="Malzeme" value="Jalepeno" checked={formData.Malzeme.includes("Jalepeno")}></input>
+  <label htmlFor ="food9"> Jalepeno</label>
   <br></br>
-  <input onChange={handleChange} type="checkbox" id="vehicle3" name="Malzeme" value="Sarımsak" checked={formData.Malzeme.includes("Sarımsak")}></input>
-  <label htmlFor ="vehicle3"> Sarımsak</label>
+  <input onChange={handleChange} type="checkbox" id="food10" name="Malzeme" value="Sarımsak" checked={formData.Malzeme.includes("Sarımsak")}></input>
+  <label htmlFor ="food10"> Sarımsak</label>
   <br></br>
   </div>
   <div className="last-five">
-  <input onChange={handleChange} type="checkbox" id="vehicle3" name="Malzeme" value="Biber" checked={formData.Malzeme.includes("Biber")}></input>
-  <label htmlFor ="vehicle3"> Biber</label>
+  <input onChange={handleChange} type="checkbox" id="food11" name="Malzeme" value="Biber" checked={formData.Malzeme.includes("Biber")}></input>
+  <label htmlFor ="food11"> Biber</label>
   <br></br>
-  <input onChange={handleChange} type="checkbox" id="vehicle3" name="Malzeme" value="Sucuk"checked={formData.Malzeme.includes("Sucuk")}></input>
-  <label htmlFor ="vehicle3"> Sucuk</label>
+  <input onChange={handleChange} type="checkbox" id="food12" name="Malzeme" value="Sucuk"checked={formData.Malzeme.includes("Sucuk")}></input>
+  <label htmlFor ="food12"> Sucuk</label>
   <br></br>
-  <input onChange={handleChange} type="checkbox" id="vehicle3" name="Malzeme" value="Ananas" checked={formData.Malzeme.includes("Ananas")}></input>
-  <label htmlFor ="vehicle3"> Ananas</label>
+  <input onChange={handleChange} type="checkbox" id="food13" name="Malzeme" value="Ananas" checked={formData.Malzeme.includes("Ananas")}></input>
+  <label htmlFor ="food13"> Ananas</label>
   <br></br>
-  <input onChange={handleChange}  type="checkbox" id="vehicle3" name="Malzeme" value="Kabak" checked={formData.Malzeme.includes("Kabak")}></input>
-  <label htmlFor ="vehicle3"> Kabak</label>
+  <input onChange={handleChange}  type="checkbox" id="food14" name="Malzeme" value="Kabak" checked={formData.Malzeme.includes("Kabak")}></input>
+  <label htmlFor ="food14"> Kabak</label>
 
   <br></br>
   <br></br>
@@ -131,7 +131,7 @@ const Check = () => {
   <label htmlFor ="isimalani"> Sipariş Notu</label>
   <br></br>
 
-  <input   type="text" id="isimalani" name="sipariş değeri" ></input>
+  <input   type="text" id="special-text" name="sipariş değeri" ></input>
   <br></br>
   <label htmlFor ="isimalani"> Adınızı Giriniz</label>
   <br></br>
@@ -164,7 +164,7 @@ const Check = () => {
       Toplam:       110.50tl
     </CardText>
     <div className="disbut">
-    <Button
+    <Button id="order-button"
     
     type="submit" disabled={buttonDisabledMi}>
       <Link to="final">

@@ -9,7 +9,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
        
-      background-color: yellow;
+      background-color: #FDC913;
     }
 body{
       margin: 0;
@@ -19,3 +19,6 @@ body{
       background-size: cover;
       
     }
+h1 {
+  color:white;
+}
