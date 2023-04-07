@@ -17,6 +17,10 @@ font-size: larger;
 
 .siparis{
     text-align: center;
+    background-color: white;
+}
+.TopFood{
+    background-color: red;
 }
 
 .allfive{
@@ -45,20 +49,18 @@ font-size: larger;
  
  
 }
-.disbut button{
-
-    
+.disbut button {
+background-color:yellow;
+   
 }
 .disbut p{
-    color:white;
+    color:black;
     
 }
 .disbut a{
     text-decoration:none
 }
-.EndTop{
-   
-}
+
 .enduse a{
     text-decoration: none;
 }
