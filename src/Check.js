@@ -6,6 +6,9 @@ import { Card,Button,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 const formSchema = Yup.object().shape({
+  isimDegeri: Yup.string()
+    .required("İsim alanı zorunludur")
+    .min(2, "İsim en az 2 karakter olmalı"),
   Malzeme: Yup.array().min(4, "En az 4 malzeme seçin").max(10, "En çok 10 malzeme seçin"),
 });
 
@@ -128,8 +131,15 @@ const Check = () => {
   <label htmlFor ="isimalani"> Sipariş Notu</label>
   <br></br>
 
-  <input   type="text" id="isimalani" name="isimdegeri" ></input>
- 
+  <input   type="text" id="isimalani" name="sipariş değeri" ></input>
+  <br></br>
+  <label htmlFor ="isimalani"> Adınızı Giriniz</label>
+  <br></br>
+
+  <input  onChange={handleChange}  type="text" id="isimaLANİ" name="isimDegeri" value={formData.isimDegeri} ></input>
+  {errors.isimDegeri !== "" && (
+            <div className="field-error">{errors.isimDegeri}</div>
+          )}
   </div>
   <br></br>
   <div className="final">
