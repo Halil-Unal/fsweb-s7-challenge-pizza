@@ -11,12 +11,14 @@ const Siparis = () => {
     <div className="TopFood"> 
       <h1>Teknolojik Yemekler  </h1>
       <div className="navbar">
+        <ul>
       <Link to="/">
        
           <li>  Anasayfa-  </li>
           </Link>
           <li>  Seçenekler-  </li>
           <li> Sipariş oluştur   </li>
+          </ul>
           </div>
           </div>
           <div className="MiddleFood">

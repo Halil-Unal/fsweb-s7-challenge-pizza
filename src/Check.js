@@ -1,15 +1,21 @@
 import React from "react";
 import "./Siparis.css";
 import * as Yup from "yup";
-import { useState } from "react";
-
+import { useState ,useEffect} from "react";
+import { Card,Button,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 const formSchema = Yup.object().shape({
   Malzeme: Yup.array().min(4, "En az 4 malzeme seçin").max(10, "En çok 10 malzeme seçin"),
 });
 
 const Check = () => {
   const [formData, setFormData] = useState({ Malzeme: [] });
+  const [buttonDisabledMi, setButtonDisabledMi] = useState(true);
   const [errors, setErrors] = useState({ Malzeme: "" });
+  useEffect(() => {
+    formSchema.isValid(formData).then((valid) => setButtonDisabledMi(!valid));
+  }, [formData]);
 
   const checkFormErrors = (name, value) => {
     Yup.reach(formSchema, name)
@@ -105,16 +111,61 @@ const Check = () => {
   <br></br>
   <input onChange={handleChange}  type="checkbox" id="vehicle3" name="Malzeme" value="Kabak" checked={formData.Malzeme.includes("Kabak")}></input>
   <label htmlFor ="vehicle3"> Kabak</label>
+
   <br></br>
   <br></br>
+  </div>
+  
+  
+
+ 
   {errors.Malzeme !== "" && (
             <div className="field-error">{errors.Malzeme}</div>
           )}
   </div>
+  <br></br>
+  <div className="text">
+  <label htmlFor ="isimalani"> Sipariş Notu</label>
+  <br></br>
 
+  <input   type="text" id="isimalani" name="isimdegeri" ></input>
+ 
   </div>
+  <br></br>
+  <div className="final">
+<Card
+  style={{
+    width: '18rem'
+  }}
+>
 
-
+  <CardBody>
+    <CardTitle tag="h5">
+    Sipariş Toplamı
+    </CardTitle>
+    <CardSubtitle
+      className="mb-2 text-muted"
+      tag="h6"
+    >
+      
+    </CardSubtitle>
+    <CardText>
+      Seçimler:    25TL
+      <br></br>
+      Toplam:       110.50tl
+    </CardText>
+    <div className="disbut">
+    <Button
+    
+    type="submit" disabled={buttonDisabledMi}>
+      <Link to="final">
+     <p>Sipariş Ver</p> 
+     </Link>
+    </Button>
+    </div>
+  </CardBody>
+</Card>
+</div>
 </form>
 
     );

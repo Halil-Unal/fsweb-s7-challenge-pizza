@@ -4,26 +4,47 @@
     font-style: oblique;
     color: white;
 }
-.navbar li{
-   display: flex;
-   justify-content: center;
+.siparis ul li{
+  
+ display: inline-block;
+flex-wrap: wrap;
+font-size: larger;
    color: white;
-   
+   justify-content: center;
     
 }
-.TopFood{
-    
-}
+
 
 .siparis{
     text-align: center;
 }
-.MiddleFood{
-   
-}
+
 .allfive{
     display: flex;
     justify-content: center;
     gap: 60px;
    
+}
+.final{
+    display: flex;
+    justify-content: center;
+}
+.EndTop h1{
+    color:white;
+    text-align: center;
+}
+
+.end h1{
+
+
+  margin: 250px;
+ 
+ 
+}
+.disbut button{
+
+
+}
+.disbut p{
+    color:white
 }
