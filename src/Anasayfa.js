@@ -14,18 +14,20 @@ const Anasayfa = () => {
         <div className="Main">
         <h1>Teknolojik Yemekler <br></br> Kod Acıktırır<br></br>Pizza, Doyurur</h1>
      
-      <div className="topbutton"> 
+      <br></br>
+       
+        <div/>
+       
+        <div/>
+       
+        
+        <div className="topbutton"> 
         <Link to="/pizza">
-          <button id="order-pizza">PIZZA SİPARİŞİ VER</button>
+          <button id="order-pizza">Pizza Siparişi Ver</button>
         </Link>
         </div>
-       
-        <div/>
-       
-        <div/>
-       
+        </div>
         <div className="mid">  
-       
         <Card
   style={{
     width: '25rem'
@@ -53,7 +55,7 @@ const Anasayfa = () => {
  </Link>
   </CardBody>
 </Card>
-
+<div className="twoside">  
 <Card
   style={{
     width: '25rem',
@@ -114,12 +116,13 @@ const Anasayfa = () => {
 </Card>
 </div>
 
+</div>
 <div className="footertop">  
 <h3>En Çok Paketlenen Menüler   </h3> 
 <h2>Acıktıran Kodlarla Doyuran Lezzetler    </h2>
 
    </div>
-   </div>
+  
    <div className="footerbot" >
    <Card
   style={{

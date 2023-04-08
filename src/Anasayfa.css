@@ -3,11 +3,8 @@
     }
     .topbutton button{
       border-radius: 20px;
-      padding: 15px;
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+    margin-left: 670px;
+    margin-bottom: 550px;
           
        
       background-color: #FDC913;
@@ -29,15 +26,23 @@ h1 {
 .mid{
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 60px;
   margin-top: 250px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   text-align: center;
       
 }
 .mid img {
+ 
+  height: 400px;
+}
+.twoside{
+  gap:20px
+}
+.twoside img{
   width: 40x;
   height: 150px;
+ 
 }
 .mid button{
   background-color: #FDC913;
@@ -62,11 +67,12 @@ h1 {
   justify-content: center;
   gap: 80px;
   font-family: cursive;
+  text-align: center;
 }
 .footerbot img{
-
-  width: 300px;
-  height: 200px;
+  margin-left: 40px;
+  width: 20rem;
+  height: 150px;
   
 }
 .comcontainer{
