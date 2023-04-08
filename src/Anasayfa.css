@@ -1,7 +1,7 @@
 .Top h1 {
     text-align: center;
     }
-    .Top button{
+    .topbutton button{
       border-radius: 20px;
       padding: 15px;
             position: absolute;
@@ -11,17 +11,14 @@
        
       background-color: #FDC913;
     }
-body{
 
-      
-    }
   .Main{
     background: url("mvp-banner.png");
     margin: 0;
     padding: 0;
     font-family: sans-serif;
    
-   
+    background-size: cover;
   }
 h1 {
   color:white;
@@ -59,4 +56,21 @@ h1 {
   width: 300px;
   height: 200px;
   
+}
+.comcontainer{
+  display: flex;
+  justify-content: baseline;
+  gap: 100px;
+  background-color: black;
+  color: white;
+  font-style: oblique;
+  margin-top: 20px;
+}
+.insta{
+  margin-left: 400px;
+  margin-bottom: 50px;
+}
+.footersbot{
+  background-color: black;
+  color: white;
 }

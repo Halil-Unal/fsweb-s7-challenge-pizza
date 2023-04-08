@@ -12,12 +12,14 @@ const Anasayfa = () => {
         <div className="Main">
         <h1>Teknolojik Yemekler <br></br> Kod Acıktırır<br></br>Pizza, Doyurur</h1>
      
-      
+      <div className="topbutton"> 
         <Link to="/pizza">
           <button id="order-pizza">PIZZA SİPARİŞİ VER</button>
         </Link>
-        
-
+        </div>
+        <div/>
+        <div/>
+       
         <div className="mid">  
        
         <Card
@@ -71,7 +73,9 @@ const Anasayfa = () => {
     <CardText>
       Ağzının tadını bilenlere enfes bir burger
     </CardText>
-
+    <Link to="/pizza">
+    <Button> Sipariş Ver</Button>
+    </Link>
   </CardBody>
 </Card>
 
@@ -98,16 +102,17 @@ const Anasayfa = () => {
     <CardText>
       
     </CardText>
-
+  
   </CardBody>
 
 </Card>
 </div>
-</div>
+
 <div className="footertop">  
 <p> En Çok Paketlenen Menüler   </p>
 <h2>Acıktıran Kodlarla Doyuran Lezzetler    </h2>
 
+   </div>
    </div>
    <div className="footerbot" >
    <Card
@@ -115,7 +120,9 @@ const Anasayfa = () => {
     width: '25rem',
    
   }}
+  
 >
+  
   <img
     alt="Sample"
     src={`${process.env.PUBLIC_URL}/esnek/food-1.png`}  />
@@ -189,7 +196,60 @@ const Anasayfa = () => {
   </CardBody>
 </Card>
 </div>
+<div className="comcontainer">
+<div className="comminication"  >  
+<h2>Teknolojik Yemekler   </h2>
+<img
+  
+    src={`${process.env.PUBLIC_URL}/esnek/icon-1.png`}  />
+  <p> 341 londarary road, <br></br> İstanbul/Türkiye </p>
+  <img
    
+    src={`${process.env.PUBLIC_URL}/esnek/icon-2.png`}  />
+<p>acıktım@teknolojikyemekler.com </p>
+<img
+  
+    src={`${process.env.PUBLIC_URL}/esnek/icon-3.png`}  />
+<p>+90 216 784 25 36</p>
+  </div>
+   <div className="menuıtem">  
+   <h2>Sıcacık Menüler</h2>
+   <p>Terminal Pizza</p>
+   <p>5 Kişilik Pizza</p>
+   <p>Absolute Pizza</p>
+   <p> Hungry Burger </p>
+   <p>Tavuklu Burger </p>
+   <p> Patatas Kızartması</p>
+   
+   
+   
+    </div>
+    <div className="insta">
+      <h2>İnstagram</h2>
+      <div className="instatop">
+      <img
+       src={`${process.env.PUBLIC_URL}/esnek/insta/li-0.png`}  />
+      <img src={`${process.env.PUBLIC_URL}/esnek/insta/li-1.png`}  />
+      <img src={`${process.env.PUBLIC_URL}/esnek/insta/li-2.png`}  />
+      </div>
+      <div className="instabot">
+      <img src={`${process.env.PUBLIC_URL}/esnek/insta/li-3.png`}  />
+      <img src={`${process.env.PUBLIC_URL}/esnek/insta/li-4.png`}  />
+      <img src={`${process.env.PUBLIC_URL}/esnek/insta/li-5.png`}  />
+      
+      </div>
+   
+
+    </div>
+    
+    </div>
+    <div className="footersbot">
+      <p> @Teknolojik yemekler 2023</p>
+      <div class="social">
+
+			
+			</div>
+          </div>
 </div>
       
     );

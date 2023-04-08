@@ -40,13 +40,16 @@ font-size: larger;
 .EndTop h1{
     color:white;
     text-align: center;
+    background-color: #CE2829;
+}
+.EndTop{
+    background-color: #CE2829;
 }
 
 .end h1{
 
 
-  margin: 250px;
- 
+    padding: 6rem 2rem;
  
 }
 .disbut button {
