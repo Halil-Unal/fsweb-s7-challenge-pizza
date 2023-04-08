@@ -3,6 +3,8 @@ import "./Anasayfa.css";
 import { Card,Button,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link  } from "react-router-dom";
+import { FaTwitter ,FaFacebook,FaInstagram} from 'react-icons/fa';
+
 
 const Anasayfa = () => {
   
@@ -17,7 +19,9 @@ const Anasayfa = () => {
           <button id="order-pizza">PIZZA SİPARİŞİ VER</button>
         </Link>
         </div>
+       
         <div/>
+       
         <div/>
        
         <div className="mid">  
@@ -42,7 +46,7 @@ const Anasayfa = () => {
     Position : Absolute Acılı Pizzza
     </CardSubtitle>
     <CardText>
-      Kendine güvenenlerin seçimi
+      Kendine Güvenenlerin Seçimi
     </CardText>
     <Link to="/pizza">
  <Button> Sipariş Ver</Button>
@@ -71,7 +75,7 @@ const Anasayfa = () => {
      Burger Menü
     </CardSubtitle>
     <CardText>
-      Ağzının tadını bilenlere enfes bir burger
+      Ağzının Tadını Bilenlere Enfes Bir Burger
     </CardText>
     <Link to="/pizza">
     <Button> Sipariş Ver</Button>
@@ -100,9 +104,11 @@ const Anasayfa = () => {
      Npm gibi kurye
     </CardSubtitle>
     <CardText>
-      
+      En Geç 30dk'da Siparişin Kapında
     </CardText>
-  
+    <Link to="/pizza">
+    <Button> Sipariş Ver</Button>
+    </Link>
   </CardBody>
 
 </Card>
@@ -244,9 +250,11 @@ const Anasayfa = () => {
     
     </div>
     <div className="footersbot">
-      <p> @Teknolojik yemekler 2023</p>
+      <p> @Teknolojik Yemekler 2023</p>
       <div class="social">
-
+      <FaTwitter />
+      <FaFacebook></FaFacebook>
+      <FaInstagram/>
 			
 			</div>
           </div>

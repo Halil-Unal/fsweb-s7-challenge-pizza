@@ -2,7 +2,7 @@ import React ,{ useState } from "react";
 import { Link } from "react-router-dom";
 import "./Siparis.css";
 import axios from 'axios';
-
+import { Card,Button,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap';
 const Final = () => {
     const [, setData] = useState(null);
 
@@ -31,11 +31,48 @@ const Final = () => {
             <Link to="/">
         <h1>Teknolojik Yemekler</h1>
         </Link>
+       <h3> Lezzetin Yolda </h3> 
         </div>
+       
         <div className="end" >
-        <h1>  Tebrikler! <br></br>  Siparişiniz Alındı! </h1>
-        
+        <h1>   Siparişiniz Alındı! </h1>
+        <h3>Position Absolute Acılı Pizza </h3>
+        <ul> 
+          <li> Boyut: L  </li>
+          <li> Hamur: Süper İnce  </li>
+          <li> Pepperoni, <br></br>Sosis,Salam,Mısır <br></br> Ananas </li>
+           </ul>
         </div>
+        <div className="hesap">
+        
+<Card
+  style={{
+    width: '18rem'
+  }}
+>
+<div className="bodycard"> 
+  <CardBody>
+    <CardTitle >
+    Sipariş Toplamı
+    </CardTitle>
+    <CardSubtitle
+   
+    >
+      
+    </CardSubtitle>
+    <CardText>
+      Seçimler:    25TL
+      <br></br>
+      Toplam:       110.50tl
+    </CardText>
+    
+  </CardBody>
+  </div>
+</Card>
+</div>
+          
+          
+          
         </div>
     );
   };

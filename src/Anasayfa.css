@@ -8,6 +8,7 @@
             top: 30%;
             left: 50%;
             transform: translate(-50%, -50%);
+          
        
       background-color: #FDC913;
     }
@@ -27,14 +28,19 @@ h1 {
 .mid{
   display: flex;
   justify-content: center;
-  margin: 300px;
-  gap: 100px;
-  
+  gap: 80px;
+  margin-top: 250px;
+  margin-bottom: 50px;
+  text-align: center;
       
 }
 .mid img {
-  width: 238px;
-  height: 200px;
+  width: 40x;
+  height: 150px;
+}
+.mid button{
+  background-color: #FDC913;
+  color:  black;
 }
 .footertop p {
   color:red;
@@ -73,4 +79,11 @@ h1 {
 .footersbot{
   background-color: black;
   color: white;
+  text-align: center;
+}
+.social{
+  display: flex;
+  gap:20px;
+  justify-content: center;
+  
 }
