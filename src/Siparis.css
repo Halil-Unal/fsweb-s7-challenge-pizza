@@ -18,6 +18,7 @@ font-size: larger;
 .siparis{
     text-align: center;
     background-color: white;
+    font-family: cursive;
 }
 .TopFood{
     background-color:  #CE2829;
@@ -44,6 +45,7 @@ font-size: larger;
 }
 .EndTop{
     background-color: #CE2829;
+    font-family: cursive;
 }
 
 .end h1{

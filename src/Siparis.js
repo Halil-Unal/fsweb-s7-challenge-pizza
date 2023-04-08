@@ -3,7 +3,7 @@ import "./Siparis.css";
 import RadioDrop from "./RadioDrop"
 import Check from "./Check"
 import { Link } from "react-router-dom";
-import { Card,Button,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaTwitter ,FaFacebook,FaInstagram} from 'react-icons/fa';
 const Siparis = () => {

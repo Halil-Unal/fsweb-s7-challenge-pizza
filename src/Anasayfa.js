@@ -115,7 +115,7 @@ const Anasayfa = () => {
 </div>
 
 <div className="footertop">  
-<p> En Çok Paketlenen Menüler   </p>
+<h3>En Çok Paketlenen Menüler   </h3> 
 <h2>Acıktıran Kodlarla Doyuran Lezzetler    </h2>
 
    </div>
