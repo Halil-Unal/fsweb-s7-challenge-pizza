@@ -12,13 +12,51 @@
       background-color: #FDC913;
     }
 body{
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background: url("mvp-banner.png");
-      background-size: cover;
+
       
     }
+  .Main{
+    background: url("mvp-banner.png");
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   
+   
+  }
 h1 {
   color:white;
+}
+
+.mid{
+  display: flex;
+  justify-content: center;
+  margin: 300px;
+  gap: 100px;
+  
+      
+}
+.mid img {
+  width: 238px;
+  height: 200px;
+}
+.footertop p {
+  color:red;
+  font-style: oblique;
+}
+.footertop{
+  text-align: center;
+  margin-bottom: 100px;
+  background-color: white;
+
+}
+.footerbot{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+
+}
+.footerbot img{
+  width: 300px;
+  height: 200px;
+  
 }
