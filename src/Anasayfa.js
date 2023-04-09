@@ -3,8 +3,11 @@ import "./Anasayfa.css";
 import { Card,Button,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link  } from "react-router-dom";
-import { FaTwitter ,FaFacebook,FaInstagram} from 'react-icons/fa';
-
+import { FaTwitter ,FaFacebook,FaInstagram,FaPizzaSlice,FaHamburger} from 'react-icons/fa';
+import { IoFastFoodOutline} from 'react-icons/io5';
+import { GiFrenchFries} from 'react-icons/gi';
+import { CiPizza} from 'react-icons/ci';
+import { MdOutlineFastfood} from 'react-icons/md';
 
 const Anasayfa = () => {
   
@@ -26,6 +29,14 @@ const Anasayfa = () => {
           <button id="order-pizza">Pizza Siparişi Ver</button>
         </Link>
         </div>
+        </div>
+        <div className="socialtop">
+        <FaPizzaSlice></FaPizzaSlice>
+        <IoFastFoodOutline></IoFastFoodOutline>
+        <GiFrenchFries></GiFrenchFries>
+        <FaHamburger></FaHamburger>
+        <CiPizza></CiPizza>
+        <MdOutlineFastfood></MdOutlineFastfood>
         </div>
         <div className="mid">  
         <Card
@@ -117,10 +128,18 @@ const Anasayfa = () => {
 </div>
 
 </div>
+
 <div className="footertop">  
 <h3>En Çok Paketlenen Menüler   </h3> 
 <h2>Acıktıran Kodlarla Doyuran Lezzetler    </h2>
-
+<div className="socialbot">
+        <FaPizzaSlice></FaPizzaSlice>
+        <IoFastFoodOutline></IoFastFoodOutline>
+        <GiFrenchFries></GiFrenchFries>
+        <FaHamburger></FaHamburger>
+       <CiPizza ></CiPizza>
+       <MdOutlineFastfood></MdOutlineFastfood>
+        </div>
    </div>
   
    <div className="footerbot" >
