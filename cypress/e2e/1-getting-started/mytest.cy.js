@@ -26,7 +26,7 @@ describe('Header Text', function() {
     it('malzeme doğru isim hatalı', function() {
       cy.visit('http://localhost:3000/pizza');
   
-      cy.get('input[name="sipariş değeri"]').type("al");
+      cy.get('input[name="sipariş değeri"]').type("a");
       cy.get('input[value="Domates"]').click();
       cy.get('input[value="Mısır"]').click();
       cy.get('input[value="Soğan"]').click();
