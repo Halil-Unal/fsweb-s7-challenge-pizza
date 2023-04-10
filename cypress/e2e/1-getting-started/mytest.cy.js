@@ -93,7 +93,7 @@ describe('Header Text', function() {
     })
   })
   describe('Link Navigation', function() {
-    it('4-10 arası malzeme seçilebilir isim 2 harften çok olmalı', function() {
+    it('Baştan sona kadar doğru ilerliyor mu?', function() {
       cy.visit('http://localhost:3000');
       cy.get('button[id="order-pizza"]').click();
       cy.visit('http://localhost:3000/pizza');
