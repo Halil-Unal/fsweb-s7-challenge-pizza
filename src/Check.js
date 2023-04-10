@@ -89,7 +89,7 @@ const Check = () => {
   <input onChange={handleChange} type="checkbox" id="food6" name="Malzeme" value="Domates" checked={formData.Malzeme.includes("Domates")}></input>
   <label htmlFor ="food6"> Domates</label>
   <br></br>
-  <input onChange={handleChange} type="checkbox" id="vfood7" name="Malzeme" value="Mısır" checked={formData.Malzeme.includes("Mısır")}></input>
+  <input onChange={handleChange} type="checkbox" id="food7" name="Malzeme" value="Mısır" checked={formData.Malzeme.includes("Mısır")}></input>
   <label htmlFor ="food7"> Mısır</label>
   <br></br>
   <input onChange={handleChange} type="checkbox" id="food8" name="Malzeme" value="Salam" checked={formData.Malzeme.includes("Salam")}></input>

@@ -11,9 +11,8 @@ const RadioDrop = () => {
 
   <p>Boyut Seç *</p>
 
-  <input type="radio" id="small" name="fav_language" value="Küçük"></input>
-
-  <label htmlfor="small">Küçük</label><br></br>
+  <input type="radio" id="meds" name="fav_language" value="Orta"></input>
+  <label htmlFor="meds">Küçük</label><br></br>
 
 
   <input type="radio" id="med" name="fav_language" value="Orta"></input>
