@@ -92,3 +92,23 @@ describe('Header Text', function() {
  
     })
   })
+  describe('Link Navigation', function() {
+    it('4-10 arası malzeme seçilebilir isim 2 harften çok olmalı', function() {
+      cy.visit('http://localhost:3000');
+      cy.get('button[id="order-pizza"]').click();
+      cy.visit('http://localhost:3000/pizza');
+  
+      cy.get('input[name="sipariş değeri"]').type("ali");
+      cy.get('input[value="Domates"]').click();
+      cy.get('input[value="Mısır"]').click();
+      cy.get('input[value="Soğan"]').click();
+      cy.get('input[value="Pepperoni"]').click();
+      cy.get('input[value="Sucuk"]').click();
+      
+      cy.get('button[type="submit"]').should("be.visible");
+      
+      cy.visit('http://localhost:3000/final');
+    
+    })
+    
+  })
