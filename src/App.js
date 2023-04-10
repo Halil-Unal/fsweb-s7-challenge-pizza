@@ -1,11 +1,12 @@
 import React from "react";
-import {  Route, BrowserRouter as Router } from "react-router-dom";
+import {  BrowserRouter, Route, BrowserRouter as Router } from "react-router-dom";
 import Siparis from "./Siparis.js"
 import Anasayfa from "./Anasayfa.js"
 import Complate from "./Complate.js"
 import "./Anasayfa.css";
 const App = () => {
   return (
+    <BrowserRouter>
     <Router>
       <div className="anasayfa">
         <Route exact path="/" component={Anasayfa} />
@@ -17,6 +18,7 @@ const App = () => {
         <Route exact path="/final" component={Complate} />
       </div>
     </Router>
+    </BrowserRouter>
   );
 };
 
