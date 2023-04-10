@@ -166,7 +166,7 @@ const Anasayfa = () => {
    
     </CardSubtitle>
     <CardText>
-      4.8      (200)          60 TL
+      4.8   &nbsp;   (200)     &nbsp;     60 TL
     </CardText>
 
   </CardBody>
@@ -192,7 +192,7 @@ const Anasayfa = () => {
      
     </CardSubtitle>
     <CardText>
-    4.9      (250)          85.50 TL
+    4.9  &nbsp;    (250)   &nbsp;      85.50 TL
     </CardText>
 
   </CardBody>
@@ -218,7 +218,7 @@ const Anasayfa = () => {
     
     </CardSubtitle>
     <CardText>
-    4.5      (250)          68 TL
+    4.5    &nbsp;  (250)       &nbsp;   68 TL
     </CardText>
 
   </CardBody>
