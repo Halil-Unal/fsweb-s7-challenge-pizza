@@ -1,5 +1,5 @@
 import React from "react";
-import "./Anasayfa.css";
+import "./HomePage.css";
 import { Card,Button,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link  } from "react-router-dom";
@@ -9,7 +9,7 @@ import { GiFrenchFries} from 'react-icons/gi';
 import { CiPizza} from 'react-icons/ci';
 import { MdOutlineFastfood} from 'react-icons/md';
 
-const Anasayfa = () => {
+const HomePage = () => {
   
     return (
      
@@ -284,4 +284,4 @@ const Anasayfa = () => {
       
     );
   };
-  export default Anasayfa;
+  export default HomePage;

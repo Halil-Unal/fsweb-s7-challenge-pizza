@@ -1,5 +1,5 @@
 import React from "react";
-import "./Siparis.css";
+import "./Order.css";
 import * as Yup from "yup";
 import { useState ,useEffect} from "react";
 import { Card,Button,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap';

@@ -1,18 +1,18 @@
 import React  from "react";
-import "./Siparis.css";
+import "./Order.css";
 import RadioDrop from "./RadioDrop"
 import Check from "./Check"
 import { Link } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaTwitter ,FaFacebook,FaInstagram} from 'react-icons/fa';
-const Siparis = () => {
+const Order = () => {
  
    
     
   return (
     
-    <div id="pizza-form" className="siparis">
+    <div id="pizza-form" className="order">
      
     <>
     <div className="TopFood"> 
@@ -102,4 +102,4 @@ const Siparis = () => {
     </div>
   );
 };
-export default Siparis;
+export default Order;

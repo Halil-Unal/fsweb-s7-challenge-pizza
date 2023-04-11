@@ -4,7 +4,7 @@
     font-style: oblique;
     color: white;
 }
-.siparis ul li{
+.order ul li{
   
  display: inline-block;
 flex-wrap: wrap;
@@ -15,7 +15,7 @@ font-size: larger;
 }
 
 
-.siparis{
+.order{
     text-align: center;
     background-color: white;
     font-family: cursive;

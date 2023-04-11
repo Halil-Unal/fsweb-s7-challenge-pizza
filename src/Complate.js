@@ -1,6 +1,6 @@
 import React ,{ useState } from "react";
 import { Link } from "react-router-dom";
-import "./Siparis.css";
+import "./Order.css";
 import axios from 'axios';
 import { Card,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap';
 const Final = () => {
