@@ -133,12 +133,12 @@ const Check = () => {
   </div>
   <br></br>
   <div className="text">
-  <label htmlFor ="isimalani"> Sipariş Notu</label>
+  <label htmlFor ="special-text"> Sipariş Notu</label>
   <br></br>
 
   <input   type="text" id="special-text" name="sipariş değeri" ></input>
   <br></br>
-  <label htmlFor ="isimalani"> Adınızı Giriniz</label>
+  <label htmlFor ="isimaLANİ"> Adınızı Giriniz</label>
   <br></br>
 
   <input  onChange={handleChange}  type="text" id="isimaLANİ" name="isimDegeri" value={formData.isimDegeri} ></input>
