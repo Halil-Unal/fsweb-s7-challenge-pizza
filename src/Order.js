@@ -47,15 +47,15 @@ const Order = () => {
 <div className="comminication"  >  
 <h2>Teknolojik Yemekler   </h2>
 <img
-  
+  alt="Sample"
     src={`${process.env.PUBLIC_URL}/esnek/icon-1.png`}  />
   <p> 341 londarary road, <br></br> İstanbul/Türkiye </p>
   <img
-   
+   alt="Sample"
     src={`${process.env.PUBLIC_URL}/esnek/icon-2.png`}  />
 <p>acıktım@teknolojikyemekler.com </p>
 <img
-  
+  alt="Sample"
     src={`${process.env.PUBLIC_URL}/esnek/icon-3.png`}  />
 <p>+90 216 784 25 36</p>
   </div>
@@ -75,14 +75,15 @@ const Order = () => {
       <h2>İnstagram</h2>
       <div className="instatop">
       <img
+      alt="Sample"
        src={`${process.env.PUBLIC_URL}/esnek/insta/li-0.png`}  />
-      <img src={`${process.env.PUBLIC_URL}/esnek/insta/li-1.png`}  />
-      <img src={`${process.env.PUBLIC_URL}/esnek/insta/li-2.png`}  />
+      <img alt="Sample"  src={`${process.env.PUBLIC_URL}/esnek/insta/li-1.png`}  />
+      <img alt="Sample"  src={`${process.env.PUBLIC_URL}/esnek/insta/li-2.png`}  />
       </div>
       <div className="instabot">
-      <img src={`${process.env.PUBLIC_URL}/esnek/insta/li-3.png`}  />
-      <img src={`${process.env.PUBLIC_URL}/esnek/insta/li-4.png`}  />
-      <img src={`${process.env.PUBLIC_URL}/esnek/insta/li-5.png`}  />
+      <img alt="Sample"  src={`${process.env.PUBLIC_URL}/esnek/insta/li-3.png`}  />
+      <img alt="Sample" src={`${process.env.PUBLIC_URL}/esnek/insta/li-4.png`}  />
+      <img alt="Sample" src={`${process.env.PUBLIC_URL}/esnek/insta/li-5.png`}  />
       
       </div>
    
