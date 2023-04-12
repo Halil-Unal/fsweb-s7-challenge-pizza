@@ -273,7 +273,7 @@ const HomePage = () => {
     </div>
     <div className="footersbot">
       <p> @Teknolojik Yemekler 2023</p>
-      <div class="social">
+      <div className="social">
       <FaTwitter />
       <FaFacebook></FaFacebook>
       <FaInstagram/>
