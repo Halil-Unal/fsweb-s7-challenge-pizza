@@ -39,7 +39,7 @@ const Check = () => {
 
   function handleChange(event) {
     const { value, type, name } = event.target;
-
+  
     if (type === "checkbox") {
       let yeniMalzemelr;
       if (formData.Malzeme.includes(value)) {
@@ -47,19 +47,24 @@ const Check = () => {
       } else {
         yeniMalzemelr = [...formData.Malzeme, value];
       }
+
       checkFormErrors(name, yeniMalzemelr);
       setFormData({
         ...formData,
         [name]: yeniMalzemelr,
       });
+      console.log("Seçilen Malzemeler: ", {...formData, [name]: yeniMalzemelr});
+  
     } else {
       checkFormErrors(name, value);
       setFormData({
         ...formData,
         [name]: value,
       });
+      console.log("Seçilen Malzemeler: ", {...formData, [name]: value});
     }
   }
+  
     return (
       
 <form >

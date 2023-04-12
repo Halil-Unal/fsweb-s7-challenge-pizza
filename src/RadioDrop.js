@@ -1,50 +1,56 @@
-import "./Radio.css";
-import React from "react";
-
+import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./Radio.css";
+
 const RadioDrop = () => {
-    return (
-      <div className="radio">
 
+  const [selectedSize, setSelectedSize] = useState("");
+  const [selectedDough, setSelectedDough] = useState("");
 
-<form >
+  const handleSizeChange = (event) => {
+    setSelectedSize(event.target.value);
+  }
 
-  <p>Boyut Seç *</p>
-
-  <input type="radio" id="meds" name="fav_language" value="Orta"></input>
-  <label htmlFor="meds">Küçük</label><br></br>
-
-
-  <input type="radio" id="med" name="fav_language" value="Orta"></input>
-  <label htmlFor="med">Orta</label><br></br>
-
-
-  <input type="radio" id="large" name="fav_language" value="Büyük"></input>
-  <label htmlFor="large">Büyük</label><br></br>
-
-
-</form>
-
-<form action="/action_page.php">
-  <label for="cars">Hamur Seçiniz *</label>
-  <br></br>
-  <select name="cars" id="cars">
-    <option value="Kalın">Kalın Hamur</option>
-    <option value="İnce">İnce Hamur</option>
-    <option value="Çok İnce">Çok İnce Hamur</option>
-    
-  </select>
+  const handleDoughChange = (event) => {
+    setSelectedDough(event.target.value);
+  }
+  if (selectedSize !== "") {
+    console.log("Seçilen boyut: ", selectedSize);
+   
+  }
+  if (selectedDough !== "") {
   
-  
-</form>
-</div>
+  console.log("Seçilen hamur: ", selectedDough);
+  }
+  return (
+    <div className="radio">
+      <form>
+        <p>Boyut Seç *</p>
 
+        <input type="radio" id="meds" name="size" value="Küçük" checked={selectedSize === "Küçük"} onChange={handleSizeChange} />
+        <label htmlFor="meds">Küçük</label><br />
 
+        <input type="radio" id="med" name="size" value="Orta" checked={selectedSize === "Orta"} onChange={handleSizeChange} />
+        <label htmlFor="med">Orta</label><br />
 
-    );
-  };
-  
-  export default RadioDrop;
+        <input type="radio" id="large" name="size" value="Büyük" checked={selectedSize === "Büyük"} onChange={handleSizeChange} />
+        <label htmlFor="large">Büyük</label><br />
+      </form>
 
+      <form>
+        <label htmlFor="dough">Hamur Seçiniz *</label><br />
+        <select id="dough" value={selectedDough} onChange={handleDoughChange}>
+          <option value="">Seçiniz</option>
+          <option value="Kalın">Kalın Hamur</option>
+          <option value="İnce">İnce Hamur</option>
+          <option value="Çok İnce">Çok İnce Hamur</option>
+        </select>
+      </form>
+
+    </div>
+  );
+};
+
+export default RadioDrop;
 
 
